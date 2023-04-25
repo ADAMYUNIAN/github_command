@@ -1,0 +1,18 @@
+- download & install git bash
+- git config --global user.name "adamyunian56"
+- git config --global user.email adamyunian56@gmail.com
+- git config --global user.password "ketik_password"
+
+- download & install putty
+
+- cd ~/.ssh/
+- ssh-keygen -t rsa -C "adamyunian56@gmail.com" -b 4096
+- isi : id_rsa
+- kosongkan : passpharse
+- copy file ~/.ssh/id_anda.pub ke setting ssh github web
+
+- eval `ssh-agent -s`
+- ssh-add id_rsa
+
+- ssh -T git@github.com
+
